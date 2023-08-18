@@ -1,36 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript vs JQuery Example</title>
     <!--Retrieve the library of JQuery from the CDN (Content Delivery Network)-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <input type="text" id="txtEmail" value="Email Input">
-    <input type="password" id="txtPassword" value="Password Input">
-    <br>
-    
-    <label>Label 1</label>
-    <label>Label 2</label>
-    <br>
+    <header class="text-center">
+        <h1>Welcome to my Jquery registration system</h1>
 
-    <div class="menu">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-    </div>
-    <!--Header-->
-    <header>Click here to show the form</header>
-    <!--This is the form to be hidden/show-->
-    <div class="form">
-        <label for = "name">Name</label>
-        <input type="text" id="name" name="name">
-    </div>
-    <!--Button to hide the form-->
-
-    <button id="btnAdd">Hide form</button>
-
-    <script src="scripts/practice.js"></script>
+    <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="register.html">Register</a>
+    </nav>
+    </header class="text-center">
+    <main class="container">
+        <h3 class="text-center">Log into the system</h3>
+        <div class="container">
+            <div class="mb-3">
+            <input class="form-control" type="email" id="txtEmail" placeholder="Add your email">
+            </div>
+            <div class="mb-3">
+                <input class="form-control" type="password" id="txtPassword" placeholder="Add your password">
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-primary" onclick="login()">Login</button>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./scripts/storeManager.js"></script>
+    <script src="./scripts/login.js"></script>
 </body>
 </html>
